@@ -1,0 +1,36 @@
+.header {
+    background-color: $main-color;
+    min-height: 200px;
+    .container {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 380px 700px;
+        grid-template-rows: 1fr;
+    }
+    &__logo {
+        display: block;
+        margin: 0 auto;
+    }
+    &__menu {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    &__nav {
+        grid-row: 2/2;
+    }
+    &__list {
+        display: flex;
+        justify-content: end;
+        list-style-type: none;
+    }
+    &__item {
+        padding: 15px;
+    }
+    &__link {
+        color: #fff;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
