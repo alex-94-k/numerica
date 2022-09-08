@@ -1,6 +1,6 @@
 .math {
+    margin-top: 70px;
     min-height: 500px;
-    background-color: $second-color;
     &__wrapper {
         display: grid;
         grid-template-columns: minmax(auto, 340px) minmax(auto, 780px);

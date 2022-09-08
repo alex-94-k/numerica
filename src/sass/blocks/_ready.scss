@@ -1,0 +1,46 @@
+.ready {
+    margin-top: 70px;
+    min-height: 500px;
+    &__wrapper {
+        display: block;
+        margin: 0 auto;
+    }
+    &__header {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 25px;
+    }
+    &__divider {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__advantages {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 20px;
+    }
+    &__advantage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25px 15px 1fr;
+        row-gap: 30px;
+        padding: 15px;
+        border-radius: 15px;
+        transition: all 0.6s;
+        &:hover {
+            box-shadow: 2.5px 2.5px 15px gray;
+        }
+    }
+    &__icon {
+        margin: 0 auto;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color: $average-color;
+    }
+    &__title {
+        text-align: center;
+    }
+}
