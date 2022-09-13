@@ -14,6 +14,12 @@
    .ready {
         padding-bottom: 25px;
    }
+   .physics {
+        &__descr {
+            padding-bottom: 30px;
+            padding-left: 30px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -82,6 +88,34 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+    }
+    .physics {
+        &__wrapper{
+            display: grid;
+            grid-template-rows: minmax(250px, auto) 250px;
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+        &__descr {
+            padding-left: 30px;
+        }
+        &__header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__divider {
+            margin: 0 auto;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        &__btn {
+            &-block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }

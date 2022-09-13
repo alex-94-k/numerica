@@ -1,0 +1,36 @@
+.physics {
+    margin-bottom: 70px;
+    min-height: 500px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: minmax(auto, 780px) minmax(auto, 340px);
+        grid-template-rows: 1fr;
+        column-gap: 20px;
+    }
+    &__image {
+        width: 100%;
+        min-height: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__descr {
+        padding-top: 60px;
+        padding-right: 30px;
+    }
+    &__btn {
+        margin-top: 20px;
+        &:hover {
+            background-color: $main-color;
+        }
+    }
+    &__link {
+        color: #fff;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
