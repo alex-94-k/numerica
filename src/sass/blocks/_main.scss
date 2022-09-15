@@ -1,0 +1,14 @@
+.main {
+    &__header {
+        margin: 25px 0 25px 0;
+        display: grid;
+        grid-template-columns: 90% 10%;
+        grid-template-rows: 1fr;
+        padding: 10px;
+        height: 40px;
+        width: 25%;
+        border-radius: 15px;
+        background-color: $botton-color;
+        color: #fff;
+    }
+}
