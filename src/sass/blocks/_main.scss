@@ -1,14 +1,28 @@
 .main {
-    &__header {
-        margin: 25px 0 25px 0;
-        display: grid;
-        grid-template-columns: 90% 10%;
-        grid-template-rows: 1fr;
+    &__theme-button {
+        margin-top: 25px;
         padding: 10px;
-        height: 40px;
-        width: 25%;
-        border-radius: 15px;
         background-color: $botton-color;
         color: #fff;
+        border-radius: 15px;
+        position: relative;
     }
+    &__list {
+        display: none;
+        position: absolute;
+    }
+    &__link {
+        display: block;
+        padding-left: 15px;
+    }
+}
+.fa-angle-down {
+    transition: all 0.6s;
+}
+.show {
+    display: block;
+    transition: all 0.6s;
+}
+.rotate {
+    transform: rotate(-180deg);
 }
