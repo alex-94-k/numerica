@@ -26,6 +26,32 @@
     .container {
         width: 750px;
     }
+    .header {
+        &__list {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0,0,0, .8);
+            transition: 0.6s all;
+            &__active {
+                left: 0;
+            }
+        }
+        &__item {
+            padding-right: 0;
+            border: none;
+            margin: 10px 0;
+        }
+        &__link {
+            font-size: 20px;
+        }
+    }
     .ready {
         &__advantages {
             padding-right: 15px;
@@ -36,24 +62,47 @@
             row-gap: 15px;
         }
     }
+    .burger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 18px;
+        span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 2px;
+            transition: all 0.6s;
+        }
+        &__active {
+            span {
+                margin-bottom: -3px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+
+				&:nth-child(2) {
+                    display: none;
+                }
+
+				&:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .footer__advice {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
     .container {
         width: 100%;
-    }
-    .header {
-        &__menu {
-            position: relative;
-        }
-        &__nav {
-            position: absolute;
-            right: -100%;
-        }
-        &__list {
-            display: flex;
-            flex-direction: column;
-        }
     }
     .math {
         &__wrapper{
@@ -118,8 +167,16 @@
             }
         }
     }
+    .footer__advice {
+        display: none;
+    }
 }
 
 @media (max-width: 320px) {
-   
+    .container {
+        width: 100%;
+    }
+    .footer__advice {
+        display: none;
+    }
 }
