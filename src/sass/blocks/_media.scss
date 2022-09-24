@@ -167,6 +167,17 @@
             }
         }
     }
+    .main {
+        &__theme {
+            margin-left: 25px;
+        }
+    }
+    .about {
+        &__text {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
     .footer__advice {
         display: none;
     }
