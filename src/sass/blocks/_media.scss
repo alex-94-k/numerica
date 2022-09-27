@@ -105,11 +105,13 @@
         width: 100%;
     }
     .math {
-        &__wrapper{
-            display: grid;
-            grid-template-rows:250px minmax(250px, auto);
-            grid-template-columns: 1fr;
-            row-gap: 20px;
+        margin-top: 35px;
+        &__wrapper {
+            display: block;
+            margin: 0 auto;
+        }
+        &__image {
+            display: none;
         }
         &__descr {
             padding-left: 30px;
@@ -133,18 +135,32 @@
         }
     }
     .ready {
+        background-color: $main-color;
+        margin-top: 35px;
         &__advantages {
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
+        &__header {
+            color: #fff;
+        }
+        &__title {
+            color: #fff;
+        }
+        &__text {
+            color: #fff;
+        }
     }
     .physics {
-        &__wrapper{
-            display: grid;
-            grid-template-rows: minmax(250px, auto) 250px;
-            grid-template-columns: 1fr;
-            row-gap: 20px;
+        margin-top: 35px;
+        margin-bottom: 25px;
+        &__wrapper {
+            display: block;
+            margin: 0 auto;
+        }
+        &__image {
+            display: none;
         }
         &__descr {
             padding-left: 30px;
@@ -168,8 +184,11 @@
         }
     }
     .main {
-        &__theme {
-            margin-left: 25px;
+        &__themes {
+            padding-left: 25px;
+        }
+        &__subthemes {
+            padding-left: 25px;
         }
     }
     .about {
@@ -187,7 +206,33 @@
     .container {
         width: 100%;
     }
+    .main__left-text, .main__button {
+        display: none;
+    }
+    .main {
+        &__themes {
+            padding-left: 10px;
+        }
+        &__subthemes {
+            padding-left: 10px;
+        }
+        &__right-link {
+            display: block;
+            text-align: center;
+            width: 140px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: $hover-color;
+            margin-bottom: 15px;
+        }
+    }
+    .hdn {
+        display: block;
+    }
     .footer__advice {
         display: none;
+    }
+    .translate {
+        transform: translateX(0px);
     }
 }
