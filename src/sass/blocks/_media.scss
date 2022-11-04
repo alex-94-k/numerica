@@ -22,11 +22,14 @@
     }
 }
 
+/* smartphones */
+
 @media (max-width: 768px) {
     .container {
         width: 750px;
     }
     .header {
+        max-height: 30px;
         &__list {
             position: fixed;
             flex-direction: column;
@@ -47,9 +50,16 @@
             padding-right: 0;
             border: none;
             margin: 10px 0;
+            background-color: transparent;
         }
         &__link {
             font-size: 20px;
+            text-align: left;
+            transform: none;
+            &:hover {
+                transform: none;
+                box-shadow: none;
+            }
         }
     }
     .ready {
@@ -66,7 +76,7 @@
         display: block;
         position: absolute;
         right: 10px;
-        top: 50px;
+        top: 50%;
         transform: translateY(-50%);
         width: 30px;
         height: 18px;
@@ -95,8 +105,11 @@
             }
         }
     }
-    .footer__advice {
-        display: none;
+    .footer {
+        max-height: 50px;
+        &__advice {
+            display: none;
+        }
     }
 }
 
@@ -136,7 +149,7 @@
     }
     .ready {
         background-color: $main-color;
-        margin-top: 35px;
+        padding-top: 35px;
         &__advantages {
             display: flex;
             flex-direction: column;
@@ -199,6 +212,26 @@
     }
     .footer__advice {
         display: none;
+    }
+}
+
+/* 414px for iPhone XR */
+
+@media (max-width: 414px) {
+    .main__left-text, .main__button {
+        display: none;
+    }
+
+    .hdn {
+        display: block;
+    }
+
+    .translate {
+        transform: translateX(0px);
+    }
+
+    .fa-solid {
+        margin-left: 10px;
     }
 }
 
