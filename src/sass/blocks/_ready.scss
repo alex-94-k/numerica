@@ -8,7 +8,6 @@
     &__header {
         margin-top: 25px;
         text-align: center;
-        font-size: 25px;
     }
     &__divider {
         margin: 0 auto;
@@ -42,5 +41,9 @@
     }
     &__title {
         text-align: center;
+    }
+    &__text {
+        margin-top: 20px;
+        text-align: justify;
     }
 }
