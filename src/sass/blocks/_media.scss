@@ -226,6 +226,12 @@
         &__subthemes {
             padding-left: 25px;
         }
+        &__right {
+            &-link {
+               display: block;
+               text-align: center;
+            }
+        }
     }
     .about {
         &__text {
