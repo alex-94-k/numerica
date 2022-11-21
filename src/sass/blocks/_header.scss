@@ -1,7 +1,8 @@
 .header {
     background-color: $main-color;
-    min-height: 150px;
+    height: 150px;
     padding-bottom: 10px;
+    position: relative;
     &__wrapper {
         height: 150px;
         display: flex;

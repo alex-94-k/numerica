@@ -6,6 +6,11 @@
    .container {
         width: 900px;
    }
+   .header {
+        &__item {
+            min-width: 150px;
+        }
+   }
    .math {
         &__descr {
             padding-bottom: 30px;
@@ -28,8 +33,12 @@
     .container {
         width: 750px;
     }
+    .title {
+        margin: 0 auto;
+        text-align: center;
+    }
     .header {
-        max-height: 30px;
+        height: 50px;
         &__list {
             position: fixed;
             flex-direction: column;
@@ -60,16 +69,6 @@
                 transform: none;
                 box-shadow: none;
             }
-        }
-    }
-    .ready {
-        &__advantages {
-            padding-right: 15px;
-            padding-left: 15px;
-            display: grid;
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-columns: repeat(2, 1fr);
-            row-gap: 15px;
         }
     }
     .burger {
@@ -105,6 +104,22 @@
             }
         }
     }
+    .ready {
+        &__advantages {
+            padding-right: 15px;
+            padding-left: 15px;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 15px;
+        }
+    }
+    .about {
+        &__text {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
     .footer {
         max-height: 50px;
         &__advice {
@@ -116,6 +131,11 @@
 @media (max-width: 576px) {
     .container {
         width: 100%;
+    }
+    .header {
+        &__list {
+            width: 70%;
+        }
     }
     .math {
         margin-top: 35px;
@@ -164,6 +184,9 @@
         &__text {
             color: #fff;
         }
+        &__icon {
+            background-color: $second-color;
+        }
     }
     .physics {
         margin-top: 35px;
@@ -210,14 +233,23 @@
             padding-right: 15px;
         }
     }
-    .footer__advice {
-        display: none;
+    .footer {
+        &__copy {
+            &-text {
+                margin-left: 20px;
+            }
+        }
     }
 }
 
 /* 414px for iPhone XR */
 
 @media (max-width: 414px) {
+    .about {
+        &__photo {
+            height: 250px;
+        }
+    }
     .main__left-text, .main__button {
         display: none;
     }
@@ -238,6 +270,11 @@
 @media (max-width: 320px) {
     .container {
         width: 100%;
+    }
+    .header {
+        &__list {
+            width: 85%;
+        }
     }
     .main__left-text, .main__button {
         display: none;
@@ -267,5 +304,13 @@
     }
     .translate {
         transform: translateX(0px);
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__nav {
+            display: none;
+        }
     }
 }
