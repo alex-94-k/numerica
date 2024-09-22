@@ -27,4 +27,4 @@
 
 **Want to know why math and physics are so awesome?** These subjects are the building blocks of critical thinking, problem-solving, and innovation. Plus, they're your ticket to some really cool careers and a successful college experience.
 
-**Link:** [https://alex-94-k.github.io/teacher/dist/]([url](https://alex-94-k.github.io/teacher/dist/))
+**Link of the website:** NUMERICA(https://alex-94-k.github.io/teacher/dist/)
